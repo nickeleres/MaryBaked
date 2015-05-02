@@ -58,9 +58,22 @@ Template.adminTemplate.events({
 	'click .set_vendor_status': function(ev){
 		ev.preventDefault();
 
-		console.log('set vendor status clicked');
+		var selected_user = Meteor.users.find({_id: this._id}).fetch();
+		var current_user = Meteor.user();
 
-		Meteor.call('addVendorStatus', this._id);
+		if(selected_user[0]._id != current_user._id){
+			if(selected_user[0].admin === true){
+				Meteor.call('removeVendorStatus', this._id);
+			} else {
+				Meteor.call('addVendorStatus', this._id);
+			}
+		} else {
+			alert('You cannot change your own admin status');
+		}
+
+
+
+		// Meteor.call('addVendorStatus', this._id);
 	}
 });
 
