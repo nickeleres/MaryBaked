@@ -77,7 +77,42 @@ Template.adminTemplate.events({
 		} else {
 			Meteor.call('addDispoStatus', this._id);
 		}
-	}
+	},
+
+	'click .edit_user_button': function(ev, template){
+		ev.preventDefault();
+
+		var id = this._id;
+
+		var edit_fields = template.$('.' + id);
+
+		if(edit_fields.css('display', 'none')){
+			edit_fields.css('display', 'inline-block');
+		} else {
+			edit_fields.css('display', 'none');
+		}
+	},
+
+	'click .update_username': function(ev, template){
+		ev.preventDefault();
+
+		var id = this._id;
+
+		// var test_field = template.$("input[class=' + id + '][name='username']").val();
+
+		// var test_field = template.$('input[class="' + id + '"]').val();
+
+		var test_field = $('.' + id).val();
+
+		console.log(test_field);
+
+		// var username_field = template.$('input[class="username_field"]').val();
+
+		console.log(this._id);
+
+		Meteor.call('updateUsername', this._id, test_field);
+
+	},
 });
 
 
