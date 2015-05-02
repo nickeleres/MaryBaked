@@ -1,0 +1,10 @@
+<body>
+	{{renderPage}}
+</body>
+
+<template name='layoutTemplate'>
+		{{> loginButtons}}
+		<a class='btn' id='admin_button' href="{{pathFor 'admin'}}">admin</a>
+		<h2 id='welcome_header'>Welcome to MaryBaked</h2>
+		{{> yield}}
+</template>

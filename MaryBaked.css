@@ -1,0 +1,94 @@
+/* CSS declarations go here */
+
+#welcome_header{
+	margin-left: 2em;
+	margin-top: 1em;
+	opacity: 0.8;
+	clear: both;
+}
+
+#admin_welcome{
+	margin-left: 2.6em;
+	margin-top: 0.5em;
+	opacity: 0.9;
+}
+
+.login-buttons-dropdown-align-{
+	float: left;
+	margin-left: 2em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#admin_button{
+	margin-top: 0.3em;
+	margin-left: 0.5em;
+}
+
+#users_list{
+	margin-left: 4em;
+	margin-top: 2em;
+}
+
+.single_user{
+	margin-bottom: 0.5em;
+	text-align: left;
+}
+
+.user_email_style{
+	text-decoration: underline;
+}
+
+.user_attributes{
+	margin-bottom: 0.4em;
+}
+
+.save_admin_status{
+	width: 4em;
+	height: 1.5em;
+	line-height: 50%;
+}
+
+.admin_group{
+	display: none;
+	margin-left: 1em;
+}
+
+#admin_status{
+	float: left;
+}
+
+.set_admin_status, .set_vendor_status,
+.set_dispo_status{
+	width: 11.2em;
+	height: 1.5em;
+	line-height: 50%;
+	margin-left: 1em;
+	text-align: left;
+}
+
+.empty{
+	height: 10px;
+	width: 100px;
+}
+
+.edit_user_button{
+	height: 1.5em;
+	width: 2em;
+	line-height: 50%;
+}
+
+.user_input{
+	width: 10em;
+	height: 2em;
+}
+
+.submit_button{
+	width: 6em;
+	height: 1.5em;
+	line-height: 50%;
+}
+
+.edit_fields{
+	display: none;
+}
