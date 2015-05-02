@@ -31,6 +31,14 @@ Template.adminTemplate.helpers({
 		var user_object = Meteor.users.find({_id: this._id}, {dispo: 1}).fetch();
 		var dispo_status = user_object[0].dispo;
 		return dispo_status != true;
+	},
+
+	endorsed: function(){
+		var user_object = Meteor.users.find({_id: this._id}).fetch();
+
+		console.log(user_object[0].endorsers);
+
+		// return username != undefined;
 	}
 });
 
