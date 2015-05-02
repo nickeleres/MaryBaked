@@ -31,6 +31,10 @@ Template.adminTemplate.helpers({
 		var user_object = Meteor.users.find({_id: this._id}, {dispo: 1}).fetch();
 		var dispo_status = user_object[0].dispo;
 		return dispo_status != true;
+	},
+
+	endorsed: function(){
+
 	}
 });
 
@@ -98,21 +102,25 @@ Template.adminTemplate.events({
 
 		var id = this._id;
 
-		// var test_field = template.$("input[class=' + id + '][name='username']").val();
+		var updated_username = $('.' + id).val();
 
-		// var test_field = template.$('input[class="' + id + '"]').val();
-
-		var test_field = $('.' + id).val();
-
-		console.log(test_field);
-
-		// var username_field = template.$('input[class="username_field"]').val();
+		console.log(updated_username);
 
 		console.log(this._id);
 
-		Meteor.call('updateUsername', this._id, test_field);
+		Meteor.call('updateUsername', this._id, updated_username);
 
 	},
+
+	'click .set_endorsement': function(ev){
+		ev.preventDefault();
+
+		console.log(this._id, 'this dot underscore id');
+
+		console.log(Meteor.userId(), 'meteor user id');
+
+		Meteor.call('addEndorsement', this._id, Meteor.userId());
+	}
 });
 
 

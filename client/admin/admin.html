@@ -8,16 +8,19 @@
 					<li class='user_attributes'><b>profile created:</b> &nbsp; {{createdAt}}</li>
 					<li class='user_attributes'><b>username:</b> &nbsp; {{username}}
 						<input class='user_input form-control edit_fields {{_id}} username_field' id='' type="text" name='username' placeholder="username">
-						<button type="submit" class="btn btn-default submit_button edit_fields {{_id}} update_username" id=''>update</button>
+						<button type="submit" class="btn btn-default submit_button edit_fields {{_id}} update_username admin_button" id=''>update</button>
 					</li>
 					<li class='user_attributes' id='admin_status'><b>admin?</b> &nbsp; {{#if notAdmin}}false{{/if}}{{admin}}</li>
-					<button type="submit" class="btn btn-default set_admin_status">change admin status</button>
+					<button type="submit" class="btn btn-default set_admin_status admin_button">change admin status</button>
 					<div class='empty'></div>
 					<li class='user_attributes' id='admin_status'><b>vendor?</b> &nbsp; {{#if notVendor}}false{{/if}}{{vendor}}</li>
-					<button type="submit" class="btn btn-default set_vendor_status">change vendor status</button>
+					<button type="submit" class="btn btn-default set_vendor_status admin_button">change vendor status</button>
 					<div class='empty'></div>
 					<li class='user_attributes' id='admin_status'><b>dispensary?</b> &nbsp; {{#if notDispo}}false{{/if}}{{dispo}}</li>
-					<button type="submit" class="btn btn-default set_dispo_status">change dispo status</button>
+					<button type="submit" class="btn btn-default set_dispo_status admin_button">change dispo status</button>
+					<div class='empty'></div>
+					<li class='user_attributes' id='admin_status'><b>endorsed?</b> &nbsp; {{#unless endorsed}}false{{/unless}}{{#if endorsed}}true{{/if}}</li>
+					<button type="submit" class="btn btn-default set_endorsement admin_button">change endorsement</button>
 					<div class='empty'></div>
 				</ul>
 		{{/each}}

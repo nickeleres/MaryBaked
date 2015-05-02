@@ -58,7 +58,7 @@
 }
 
 .set_admin_status, .set_vendor_status,
-.set_dispo_status{
+.set_dispo_status, .admin_button{
 	width: 11.2em;
 	height: 1.5em;
 	line-height: 50%;
@@ -140,6 +140,10 @@ h1, h2, h3, h4 {
 	letter-spacing: 2px;
 	font-size: 16px;
 	margin-left: 6em;
+}
+
+.single_user{
+	margin-top: 2em;
 }
 
 .single_user span{
