@@ -18,14 +18,12 @@ Template.adminTemplate.helpers({
 	notAdmin: function(){
 		var user_object = Meteor.users.find({_id: this._id}, {admin: 1}).fetch();
 		var admin_status = user_object[0].admin;
-		console.log(admin_status, 'admin_status');
 		return admin_status != true;
 	},
 
 	notVendor: function(){
 		var user_object = Meteor.users.find({_id: this._id}, {vendor: 1}).fetch();
 		var vendor_status = user_object[0].vendor;
-		console.log(vendor_status, 'vendor status');
 		return vendor_status != true;
 	},
 
@@ -61,19 +59,31 @@ Template.adminTemplate.events({
 		var selected_user = Meteor.users.find({_id: this._id}).fetch();
 		var current_user = Meteor.user();
 
-		if(selected_user[0]._id != current_user._id){
-			if(selected_user[0].admin === true){
-				Meteor.call('removeVendorStatus', this._id);
-			} else {
-				Meteor.call('addVendorStatus', this._id);
-			}
+		if(selected_user[0].vendor === true){
+			Meteor.call('removeVendorStatus', this._id);
 		} else {
-			alert('You cannot change your own admin status');
+			Meteor.call('addVendorStatus', this._id);
 		}
+	},
 
+	'click .set_dispo_status': function(ev){
+		ev.preventDefault();
 
+		var selected_user = Meteor.users.find({_id: this._id}).fetch();
+		var current_user = Meteor.user();
 
-		// Meteor.call('addVendorStatus', this._id);
+		if(selected_user[0].dispo === true){
+			Meteor.call('removeDispoStatus', this._id);
+		} else {
+			Meteor.call('addDispoStatus', this._id);
+		}
 	}
 });
+
+
+
+
+
+
+
 
