@@ -9,7 +9,8 @@ Meteor.publish('users', function(){
 		console.log('you are an admin user');
 		return Meteor.users.find({}, 
 			{fields: 
-				{createdAt: 1, admin: 1, emails: 1, username: 1, first_name: 1, last_name: 1, vendor: 1, dispo: 1}}); 
+				{createdAt: 1, admin: 1, emails: 1, username: 1, first_name: 1, last_name: 1,
+				 vendor: 1, dispo: 1, endorsers: 1}}); 
 	}
 });
 

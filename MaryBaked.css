@@ -94,6 +94,11 @@
 
 /*~~~~~~~~~~MARYBAKED~~~~~~~~~~*/
 
+.endorsers{
+	margin-bottom: 0.5em;
+	margin-left: 1em;
+}
+
 h2{
 	opacity: 0.9;
 }

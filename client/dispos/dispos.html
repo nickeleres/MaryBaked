@@ -6,7 +6,36 @@
 			<li class='dispo_entries'>
 				{{username}}
 			</li>
+				<ul>
+					<h4>Endorsed by:</h4>
+					{{#each endorsers}}
+						<li class='endorsers'>
+							{{username}}
+						</li>
+					{{/each}}
+				</ul>
 			{{/each}}
 		</ul>
 	</div>
 </template>
+
+<!-- <template name = 'vendorsTemplate'>
+	<div class="container">
+		<h2>Vendors</h2>
+		<ul>
+			{{#each vendors}}
+			<li class='vendor_entries'>
+				{{username}}
+			</li>
+				<ul>
+					<h4>Endorsed by:</h4>
+					{{#each endorsers}}
+						<li class='endorsers'>
+							{{username}}
+						</li>
+					{{/each}}
+				</ul>
+			{{/each}}
+		</ul>
+	</div>
+</template> -->

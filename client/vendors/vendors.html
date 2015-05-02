@@ -6,6 +6,14 @@
 			<li class='vendor_entries'>
 				{{username}}
 			</li>
+				<ul>
+					<h4>Endorsed by:</h4>
+					{{#each endorsers}}
+						<li class='endorsers'>
+							{{username}}
+						</li>
+					{{/each}}
+				</ul>
 			{{/each}}
 		</ul>
 	</div>
