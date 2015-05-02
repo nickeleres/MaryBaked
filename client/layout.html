@@ -4,7 +4,11 @@
 
 <template name='layoutTemplate'>
 		{{> loginButtons}}
-		<a class='btn' id='admin_button' href="{{pathFor 'admin'}}">admin</a>
-		<h2 id='welcome_header'>Welcome to MaryBaked</h2>
+		<div id='top_bar'>
+			<a class='btn' id='admin_button' href="{{pathFor 'vendors'}}">vendors</a>
+			<a class='btn' id='admin_button' href="{{pathFor 'dispos'}}">dispensaries</a>
+			<a class='btn' id='admin_button' href="{{pathFor 'admin'}}">admin</a>
+		</div>
+		<h1 id='welcome_header'>Welcome to MaryBaked</h1>
 		{{> yield}}
 </template>

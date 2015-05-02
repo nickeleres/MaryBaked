@@ -2,7 +2,6 @@
 
 #welcome_header{
 	margin-left: 2em;
-	margin-top: 1em;
 	opacity: 0.8;
 	clear: both;
 }
@@ -91,4 +90,62 @@
 
 .edit_fields{
 	display: none;
+}
+
+/*~~~~~~~~~~MARYBAKED~~~~~~~~~~*/
+
+h2{
+	opacity: 0.9;
+}
+
+body{
+	background-color: #93D5A3;
+}
+
+a, h1, h2, ul {
+	color: white !important;
+}
+
+h1, h2, h3, h4 {
+   color: white;
+  text-shadow:
+   -1px -1px 0 #d3d3d3,  
+    1px -1px 0 #d3d3d3,
+    -1px 1px 0 #d3d3d3,
+     1px 1px 0 #d3d3d3;
+}
+
+#admin_welcome{
+	margin-left: 4em;
+}
+
+.dispo_entries, .vendor_entries{
+	font-size: 18px;
+}
+
+#top_bar{
+	padding-bottom: 2em;
+	background: -webkit-linear-gradient(#696969, #93D5A3); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#696969, #93D5A3); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#696969, #93D5A3); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#696969, #93D5A3); /* Standard syntax */
+}
+
+.vendor_entries{
+	margin-bottom: 0.5em;
+}
+
+#users_list{
+	line-height: 115%;
+	letter-spacing: 2px;
+	font-size: 16px;
+}
+
+.single_user span{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.user_attributes b{
+	text-decoration: underline;
 }
