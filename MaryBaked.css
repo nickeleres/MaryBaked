@@ -225,3 +225,13 @@ body #home_container{
 	margin-left: 2em;
 	margin-top: 2em;
 }
+
+.about{
+	text-shadow: none;
+	margin-left: 32px;
+	margin-top: 24px;
+}
+
+#about_1{
+	padding-top: 2em;
+}
