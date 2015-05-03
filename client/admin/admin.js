@@ -87,7 +87,7 @@ Template.adminTemplate.events({
 		}
 	},
 
-	'click .edit_user_button': function(ev, template){
+	'click .edit_user': function(ev, template){
 		ev.preventDefault();
 
 		var id = this._id;
