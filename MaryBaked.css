@@ -79,9 +79,15 @@
 	width: 100px;
 }
 
-.edit_user_button{
+.edit_user{
 	height: 1.5em;
 	width: 2em;
+	line-height: 50%;
+}
+
+.edit_user_button{
+	height: 1.5em;
+	width: 4em;
 	line-height: 50%;
 }
 
@@ -91,7 +97,7 @@
 }
 
 .submit_button{
-	width: 6em;
+	width: 12em;
 	height: 1.5em;
 	line-height: 50%;
 }
@@ -137,7 +143,6 @@ h1, h2, h3, h4 {
 }
 
 #top_bar{
-	padding-bottom: 2em;
 	background: -webkit-linear-gradient(#696969, #93D5A3); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(#696969, #93D5A3); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(#696969, #93D5A3); /* For Firefox 3.6 to 15 */
@@ -186,6 +191,7 @@ h1, h2, h3, h4 {
 	border-radius: 4px;
 	font-size: 16px;
 	padding-top: 0.8em;
+	
 }
 
 body #home_container{
