@@ -1,5 +1,9 @@
 /* CSS declarations go here */
 
+.login-close-text, .login-button{
+	color: #93D5A3 !important;
+}
+
 #welcome_header{
 	margin-left: 1em;
 	opacity: 0.8;
@@ -8,7 +12,7 @@
 
 #home_page_by_line{
 	margin-left: 2em;
-	padding-top: 1em;
+	padding-top: 2em;
 	letter-spacing: 2px;
 	text-shadow: 2px 2px #000000;
 }
