@@ -5,11 +5,11 @@
 <template name='layoutTemplate'>
 		{{> loginButtons}}
 		<div id='top_bar'>
-			<h1 id='welcome_header'>MaryBaked</h1>
+			<a id='mary_baked_header_button' href="{{pathFor 'home'}}"><h1 id='welcome_header'>Mary Baked</h1></a>
 			<a class='btn admin_button' href="{{pathFor 'home'}}">home</a>
 			<a class='btn admin_button' href="{{pathFor 'vendors'}}">vendors</a>
 			<a class='btn admin_button' href="{{pathFor 'dispos'}}">dispensaries</a>
-			<a class='btn admin_button' href="{{pathFor 'admin'}}">admin</a>
+			{{#if isAdmin}}<a class='btn admin_button' href="{{pathFor 'admin'}}">admin</a>{{/if}}
 		</div>
 		{{> yield}}
 </template>
