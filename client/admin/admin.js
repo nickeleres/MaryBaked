@@ -36,9 +36,9 @@ Template.adminTemplate.helpers({
 	endorsed: function(){
 		var user_object = Meteor.users.find({_id: this._id}).fetch();
 
-		console.log(user_object[0].endorsers);
+		var endorsers = user_object[0].endorsers; 
 
-		// return username != undefined;
+		return endorsers != undefined;
 	}
 });
 
