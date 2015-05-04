@@ -4,9 +4,14 @@
 	color: #93D5A3 !important;
 }
 
-a#mary_baked_header_button:hover,
-a#mary_baked_header_button:active,
-a#mary_baked_header_button:visited{
+.main_content{
+	padding-left: 15em;
+	margin-top: 2em;
+}
+
+#mary_baked_header_button:hover,
+#mary_baked_header_button:active,
+#mary_baked_header_button:visited{
 	text-decoration: none;
 }
 
