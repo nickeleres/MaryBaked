@@ -6,7 +6,7 @@
 
 .main_content{
 	padding-left: 15em;
-	margin-top: 2em;
+	margin-top: 1em;
 }
 
 #mary_baked_header_button:hover,
@@ -234,7 +234,6 @@ body #home_container{
 .about{
 	text-shadow: none;
 	margin-left: 32px;
-	margin-top: 24px;
 }
 
 #about_1{
